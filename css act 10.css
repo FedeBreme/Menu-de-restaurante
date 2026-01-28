@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+
+body{
+    background-image: url("https://static4.depositphotos.com/1006069/328/v/450/depositphotos_3285261-stock-illustration-checker-pattern.jpg");
+}
+
+article{
+  font-family: 'DM Serif Display', serif;
+}
+
+.titulo{
+    text-align: center;
+    color: black;
+    place-items: center;
+    height: 230px;
+    width: 1000px;
+    padding: 40px;
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+}
+
+ul{
+  list-style-image: url("./5404331_cafe_fork_kitchen_restaurant_icon\ \(1\).png");
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    place-items: center;
+    height: 350px;
+    width: 1000px;
+    padding: 40px;
+    background-color: whitesmoke;
+    margin: auto;
+
+  }
+  
+.flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    margin: 5px;
+  }
+  
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    margin: 5px;
+  }
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img1 img2 img3"
+      "tx1 tx2 tx3";
+    place-items: center;
+    height: 520px;
+    width: 1220px;
+    padding: 40px;
+    background-color: whitesmoke;
+    margin: auto;
+  }
+  
+.img1 { grid-area: img1; }
+  
+.img2 { grid-area: img2; }
+  
+.img3 { grid-area: img3; }
+  
+.tx1 { grid-area: tx1; }
+  
+.tx2 { grid-area: tx2; }
+  
+.tx3 { grid-area: tx3; }
+  
+.container2 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pst1 pst2"
+      "tex1 tx2";
+      place-items: center;
+      height: 530px;
+      width: 900px;
+      padding: 40px;
+      background-color: whitesmoke;
+      margin: auto;
+}
+  
+.pst1 { grid-area: pst1; }
+  
+.pst2 { grid-area: pst2; }
+  
+.tex1 { grid-area: tex1; }
+  
+.tx2 { grid-area: tx2; }
+
+.flex-container2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  place-items: center;
+  height: 290px;
+  width: 800px;
+  padding: 40px;
+  background-color: whitesmoke;
+  margin: auto;
+
+}
+
+.flex-items2:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  margin: 5px;
+}
+
+.flex-items2:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  margin: 5px;
+}
+
+.flex-container3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  place-items: center;
+  height: 290px;
+  width: 800px;
+  padding: 40px;
+  background-color: whitesmoke;
+  margin: auto;
+}
+
+.flex-items3:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  margin: 5px;
+}
+
+.flex-items3:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  margin: 5px;
+}
+
+/**/
+
+@media (max-width: 1024px) {
+
+  .titulo,
+  .flex-container,
+  .container,
+  .container2,
+  .flex-container2,
+  .flex-container3 {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  /* FLEX → COLUMN */
+  .flex-container,
+  .flex-container2,
+  .flex-container3 {
+    flex-direction: column;
+  }
+
+  /* GRID 3 COLUMNAS → 1 COLUMNA */
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img1"
+      "tx1"
+      "img2"
+      "tx2"
+      "img3"
+      "tx3";
+  }
+
+  /* GRID 2 COLUMNAS → 1 COLUMNA */
+  .container2 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "pst1"
+      "tex1"
+      "pst2"
+      "tx2";
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+  body {
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  article {
+    font-size: 0.95rem;
+  }
+
+  .titulo {
+    padding: 15px;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
